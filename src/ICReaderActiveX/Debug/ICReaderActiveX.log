@@ -1,0 +1,64 @@
+﻿生成启动时间为 2018/1/30 15:07:39。
+     1>项目“D:\Microsoft_VS\Project\ICReaderActiveX\ICReaderActiveX\ICReaderActiveX.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>Midl:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\midl.exe /D _DEBUG /W1 /nologo /char signed /env win32 /Oicf /h "ICReaderActiveX_i.h" /iid "ICReaderActiveX_i.c" /proxy "ICReaderActiveX_p.c" /tlb "Debug\ICReaderActiveX.tlb" /robust ICReaderActiveX.idl 
+         Processing .\ICReaderActiveX.idl
+         ICReaderActiveX.idl
+         Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\oaidl.idl
+         oaidl.idl
+         Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\objidl.idl
+         objidl.idl
+         Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\unknwn.idl
+         unknwn.idl
+         Processing C:\Program Files (x86)\Windows Kits\8.1\Include\shared\wtypes.idl
+         wtypes.idl
+         Processing C:\Program Files (x86)\Windows Kits\8.1\Include\shared\wtypesbase.idl
+         wtypesbase.idl
+         Processing C:\Program Files (x86)\Windows Kits\8.1\Include\shared\basetsd.h
+         basetsd.h
+         Processing C:\Program Files (x86)\Windows Kits\8.1\Include\shared\guiddef.h
+         guiddef.h
+         Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\ocidl.idl
+         ocidl.idl
+         Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\oleidl.idl
+         oleidl.idl
+         Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\servprov.idl
+         servprov.idl
+         Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\urlmon.idl
+         urlmon.idl
+         Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\msxml.idl
+         msxml.idl
+         Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\oaidl.acf
+         oaidl.acf
+         Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\ocidl.acf
+         ocidl.acf
+       ClCompile:
+         D:\Microsoft_VS\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _USRDLL /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\ICReaderActiveX.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         D:\Microsoft_VS\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _USRDLL /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt dllmain.cpp
+         dllmain.cpp
+         D:\Microsoft_VS\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _USRDLL /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\ICReaderActiveX.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ICReader.cpp ICReaderActiveX.cpp
+         ICReaderActiveX.cpp
+         ICReader.cpp
+     1>d:\microsoft_vs\project\icreaderactivex\icreaderactivex\icreader.cpp(124): warning C4244: “=”: 从“LONG”转换到“SHORT”，可能丢失数据
+         正在生成代码...
+         D:\Microsoft_VS\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _USRDLL /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ICReaderActiveX_i.c
+         ICReaderActiveX_i.c
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _DEBUG /D _UNICODE /D UNICODE /l"0x0804" /IDebug\ /nologo /fo"Debug\ICReaderActiveX.res" ICReaderActiveX.rc 
+       Link:
+         D:\Microsoft_VS\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Microsoft_VS\Project\ICReaderActiveX\Debug\ICReaderActiveX.dll" /INCREMENTAL /NOLOGO comsvcs.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:".\ICReaderActiveX.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Microsoft_VS\Project\ICReaderActiveX\Debug\ICReaderActiveX.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X86 /DLL Debug\ICReaderActiveX.res
+         Debug\dllmain.obj
+         Debug\ICReader.obj
+         Debug\ICReaderActiveX.obj
+         Debug\ICReaderActiveX_i.obj
+         Debug\stdafx.obj
+            正在创建库 D:\Microsoft_VS\Project\ICReaderActiveX\Debug\ICReaderActiveX.lib 和对象 D:\Microsoft_VS\Project\ICReaderActiveX\Debug\ICReaderActiveX.exp
+         ICReaderActiveX.vcxproj -> D:\Microsoft_VS\Project\ICReaderActiveX\Debug\ICReaderActiveX.dll
+       RegisterOutput:
+         regsvr32 /s "D:\Microsoft_VS\Project\ICReaderActiveX\Debug\ICReaderActiveX.dll"
+     1>已完成生成项目“D:\Microsoft_VS\Project\ICReaderActiveX\ICReaderActiveX\ICReaderActiveX.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:08.48

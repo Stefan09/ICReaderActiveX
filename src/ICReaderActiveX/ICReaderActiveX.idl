@@ -1,0 +1,50 @@
+// ICReaderActiveX.idl : ICReaderActiveX 的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 产生类型库(ICReaderActiveX.tlb)和封送处理代码。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(AFAC9F21-7ED5-4EE2-8760-04710BA16D22),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IICReader : IDispatch{
+	[id(1)] HRESULT TestICCard([out, retval] LONG* ReturnCode);
+	[id(2)] HRESULT isOurCard([out, retval] LONG* isFlag);
+	[id(3)] HRESULT add([in] LONG arg1, [in] LONG arg2, [out, retval] SHORT* result);
+	[id(4)] HRESULT ReadCard([out, retval]BSTR* readinfo);
+	[id(5)] HRESULT WriteUserCard([in] BSTR param, [out, retval] LONG* returncode);
+	[id(6)] HRESULT CleanCard([out, retval] LONG* returncode);
+	[id(7)] HRESULT BuyGas([in] DOUBLE gas, [in] BSTR userid, [in] SHORT buytimes, [out, retval] LONG* returncode);
+};
+[
+	uuid(3DB5E82B-D104-438A-9231-22FB165649C4),
+	version(1.0),
+]
+library ICReaderActiveXLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(49494802-7BFF-4B8B-8664-8DE4F4AA1370)		
+	]
+	dispinterface _IICReaderEvents
+	{
+		properties:
+		methods:
+	};
+	[
+		uuid(E99E58DB-ED4C-4DE9-AD1E-C8C275056B8F)		
+	]
+	coclass ICReader
+	{
+		[default] interface IICReader;
+		[default, source] dispinterface _IICReaderEvents;
+	};
+};
+

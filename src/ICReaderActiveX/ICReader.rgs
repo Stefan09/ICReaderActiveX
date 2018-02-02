@@ -1,0 +1,25 @@
+HKCR
+{
+	icreader.1 = s 'ICReader Class'
+	{
+		CLSID = s '{E99E58DB-ED4C-4DE9-AD1E-C8C275056B8F}'
+	}
+	icreader = s 'ICReader Class'
+	{		
+		CurVer = s 'icreader.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {E99E58DB-ED4C-4DE9-AD1E-C8C275056B8F} = s 'ICReader Class'
+		{
+			ProgID = s 'icreader.1'
+			VersionIndependentProgID = s 'icreader'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+			}
+			TypeLib = s '{3DB5E82B-D104-438A-9231-22FB165649C4}'
+			Version = s '1.0'
+		}
+	}
+}
